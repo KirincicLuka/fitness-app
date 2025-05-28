@@ -10,6 +10,4 @@ router.get('/my-reservations', verifyToken, zahtjevController.getMyReservations)
 router.delete('/:id', verifyToken, zahtjevController.cancel);
 router.get('/trainer-reservations', verifyToken, zahtjevController.getReservationsForTrainer);
 
-
-
 module.exports = router;
